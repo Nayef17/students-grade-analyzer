@@ -43,7 +43,18 @@ def analyzer():
         names.append(name)
         grades.append(grade)
 
+    display_student_summary(names, grades)
 
+    average = get_avg_grade(grades)
+    print("Class Average: " + str(round(average, 2)))
+
+    top_student, top_grade = get_heighest_grade(names, grades)
+    print("Highest Grade: " + top_student + " with " + str(top_grade))
+
+    passed_count = count_passed(grades)
+    print("Number of students who passed: " + str(passed_count))
+
+analyzer()
   
 
 
