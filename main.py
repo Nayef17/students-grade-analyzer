@@ -25,3 +25,8 @@ def count_passed(grades):
         if grade >= 60:
             count += 1
     return count
+
+
+def analyzer():
+    names = []
+    grades = []
