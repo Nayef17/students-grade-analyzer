@@ -11,3 +11,17 @@ def get_heighest_grade(names, grades):
     max_grade = max(grades)
     index = grades.index(max_grade)
     return names[index], max_grade
+
+def count_passed(grades):
+    count = 0
+    for grade in grades:
+        if grade >= 60:
+            count += 1
+    return count
+
+def count_passed(grades):
+    count = 0
+    for grade in grades:
+        if grade >= 60:
+            count += 1
+    return count
